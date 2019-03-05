@@ -3,12 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="add schedule"
-    android:onClick="addSchedule"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addCalendarEvent"
+        android:text="add calendar event" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteCalendarEventByTitle"
+        android:text="delete calendar event by title" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateCalendarEventByTitle"
+        android:text="update calendar event by title" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="queryCalendarEventByAccount"
+        android:text="query calendar event by account" />
+
+    <TextView
+        android:id="@+id/calendar_event_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="test data"/>
 
 </LinearLayout>
